@@ -1,6 +1,6 @@
 ### Flutter E-Commerce App using Firebase and Stripe
 
-![Shoppers](https://i.imgur.com/gIPUX46.png)
+![Shoppers](https://i.imgur.com/c8Ghzt7.png)
 
 
 ### Introduction
