@@ -66,10 +66,10 @@ flutter run
 
 **IOS app:**
 
-- Open ios/Runnder/Info.plist and replace the FluxStore by your App Name
+- Open ios/Runnder/Info.plist and replace the Shoppers by your App Name
 ```
 <key>CFBundleDisplayName</key>
-	<string>Shoppers</string>
+	<string>your-preffered-name</string>
 ```
 
 - Make sure to clean up the cache by running following scipt to clean the previous cache
