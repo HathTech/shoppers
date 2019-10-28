@@ -1,4 +1,4 @@
-### Flutter E-Commerce App using Firebase and Stripe
+### Flutter E-Commerce App using Firebase, Razorpay and Stripe
 
 ![Shoppers](https://i.imgur.com/c8Ghzt7.png)
 
@@ -25,6 +25,7 @@ Either you are business people with raising sale ambition or developers with fas
 - Form Validation
 - Admin dashboard
 - Stripe payment gateway
+- Razorpay payment gateway
 - Full e-commerce features – Dynamic Product variants, checkout process, order tracking, order notes, wishlist, manage address.
 - Great UX design multi-level categories, quick product filter, super smooth checkout flow, searching keyword history…
 
@@ -202,7 +203,7 @@ open .firebaserc file. It's in backend project
 ```
 > you will get project id from firebase console. Also make sure you login with the same credentials that you have access to firebase project. 
 
-### 2. Change stripe secret key
+### 2. Change stripe and Razorpay  key
 
 ```
 {
@@ -212,8 +213,10 @@ open .firebaserc file. It's in backend project
 }
 
 firebase functions:config:set stripe.token=sk_test_**
+firebase functions:config:set rzp.key_id=<key_id> rzp.secre=<secret>
 
 ```
+
 
 ### 3. Deploy the functions
 
@@ -222,14 +225,27 @@ firebase functions:config:set stripe.token=sk_test_**
 
 ## Stripe 
 
-open lib/widgets/cart/payment.dart and change 
+open lib/utils/config.dart and change 
 
 ```
- StripePayment.setOptions(StripeOptions(
-        publishableKey: "pk_test_***",
-        merchantId: "Test",
-        androidPayMode: 'test'));
-  }
+const StripeConfig = {
+  "publishableKey": "pk_test_*****",
+  "merchantId": "Test",
+  "androidPayMode": 'test',
+  "enabled": true,
+};
+```
+## Razorpay 
+
+open lib/utils/config.dart and change 
+
+```
+ const RazorpayConfig = {
+  "keyId": "rzp_test_*****",
+  "callbackUrl": "http://example.com",
+  "paymentMethodId": "razorpay",
+  "enabled": false,
+};
 ```
 
 
