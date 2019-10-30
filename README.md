@@ -248,6 +248,9 @@ open lib/utils/config.dart and change
 };
 ```
 
+### Possible solution to problem you face with release apk
+
+- https://stackoverflow.com/questions/36999751/google-signin-not-working-in-release-mode-apk-android
 
 
 Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions relating to this. No guarantees, but I'll do my best to assist. If you have a more general question relating to the items on codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.
