@@ -3,6 +3,9 @@
 ![Shoppers](https://i.imgur.com/c8Ghzt7.png)
 
 
+## If you haven't purchased then please buy it now - http://bit.ly/flutter-ecommerce-firebase
+
+
 ### Introduction
 
 Shoppers is an eCommerce app inspired by Flutter framerwork, made by Google. With the mission of reducing 100+ hours of business spent on designing, developing and testing a mobile app, Shoppers comes as a complete solution for optimizing to deliver your app to the market with high productivity and cost-efficiency. It could be able to satisfy all of the business requirements including e-commerce functionalities, impressive UX design and smooth performance on both iOS and Android devices.
