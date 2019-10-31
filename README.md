@@ -3,6 +3,9 @@
 ![Shoppers](https://i.imgur.com/c8Ghzt7.png)
 
 
+## Try it before you buy it - https://drive.google.com/file/d/1AJ-1ni4x1a6tARo6n4-OHLCd2aq5QmHF/view?usp=sharing
+
+
 ## If you haven't purchased then please buy it now - http://bit.ly/flutter-ecommerce-firebase
 
 
