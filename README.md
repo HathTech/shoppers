@@ -8,6 +8,8 @@
 
 ## If you haven't purchased then please buy it now - http://bit.ly/flutter-ecommerce-firebase
 
+## Join Our Slack and Github if you have purchased the product 
+ - Send your purchase code screenshot on support@hathtech.com
 
 ### Introduction
 
