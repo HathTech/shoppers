@@ -231,6 +231,40 @@ firebase functions:config:set rzp.key_id=<key_id> rzp.secre=<secret>
 
 ``` firebase deploy --only functions ```
 
+## Role management - firebase functions changes
+```
+// In setRole funtion comment this line and deploy the funtion. 
+// Change the role as admin for yourself and then uncomment this line and deploy the function.
+
+// TODO:(DEVELOPERS) -- Comment the below line to add admin for the first time.
+
+if (!isAdmin) {
+	// Throwing an HttpsError so that the client gets the error details.
+	throw new functions.https.HttpsError(
+		'failed-precondition',
+		'The function must be called ' + 'only by an administrator'
+	)
+}
+
+// This is a one time process. When you uncomment that line it ensures that only admin is allowed to change the role.
+	
+```
+
+## Role management - mobile app changes
+open lib/screens/home.dart
+
+```
+bool isAdmin = widget.user.role == 'admin' ? true : false;
+
+// Change the above line as 
+
+ bool isAdmin = widget.user.role == 'admin' ? true : true;
+ 
+ // Change your role as admin and change the above line as 
+ 
+ bool isAdmin = widget.user.role == 'admin' ? true : false;
+ 
+```
 
 ## Stripe 
 
