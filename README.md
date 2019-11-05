@@ -31,7 +31,10 @@ Either you are business people with raising sale ambition or developers with fas
 - Custom Carousel Slider 
 - Easy setup 
 - Form Validation
+- Change app icon easily
+- Onboarding screens
 - Admin dashboard
+- Role management
 - Stripe payment gateway
 - Razorpay payment gateway
 - Full e-commerce features – Dynamic Product variants, checkout process, order tracking, order notes, wishlist, manage address.
