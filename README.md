@@ -198,6 +198,26 @@ Run the project.
 - Select the token from the above collection
 - Add the title and message and send it.
 
+### Change app icon
+open pubspec.yml
+```
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/icon/icon.png"
+  
+change the image_path to match your own
+
+flutter pub get
+flutter pub run flutter_launcher_icons:main
+
+```
+
+### Onboarding screens
+- Open lib/screens/intro.dart
+- Change the color, text, and images to match yours.
+
+
 ## Firebase functions code base.
 - Intall firebase cli on your system. Guide - https://firebase.google.com/docs/cli
 
