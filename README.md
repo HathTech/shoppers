@@ -252,6 +252,8 @@ firebase functions:config:set rzp.key_id=<key_id> rzp.secre=<secret>
 
 ### 3. Deploy the functions
 
+- **Use node version 8.x.x** 
+
 ``` firebase deploy --only functions ```
 
 ## Role management - firebase functions changes
