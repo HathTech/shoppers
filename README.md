@@ -65,6 +65,12 @@ Thank you for purchasing Shoppers – **Flutter E-Commerce App using Firebase an
 
 We believe you have installed flutter in your system if not then install [flutter](https://flutter.dev/docs/get-started/install)
 
+#### Use stable version of flutter.
+```
+flutter channel stable
+flutter upgrade
+```
+
 ### Quickstart
 
 ```bash
