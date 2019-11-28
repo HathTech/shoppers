@@ -263,6 +263,7 @@ firebase functions:config:set rzp.key_id=<key_id> rzp.secre=<secret>
 ``` firebase deploy --only functions ```
 
 ## Role management - firebase functions changes
+open src/index.ts
 ```
 // In setRole funtion comment this line and deploy the funtion. 
 // Change the role as admin for yourself and then uncomment this line and deploy the function.
