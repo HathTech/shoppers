@@ -184,7 +184,17 @@ Open utils/tools.dart file and update the menu section
      - Download the google-services.json file
      - Replace the file in "android/app" 
 
-
+## Add this to firestore security rules
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth.uid != null;
+    }
+  }
+}
+```
 
 ##### When you run your app you might get an error containing "google secure content" replace the out error in info.plist file in "ios/Runner/info.plist"
 
