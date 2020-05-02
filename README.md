@@ -10,6 +10,7 @@
 
 ## Join Our Slack and Github if you have purchased the product 
  - Send your purchase code screenshot on support@hathtech.com
+ - Join whatsapp group - https://chat.whatsapp.com/HehlyYbh9wm1W6YNVlceTP
 
 ### Introduction
 
