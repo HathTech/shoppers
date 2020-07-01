@@ -125,6 +125,12 @@ flutter build ios
 - To get more detail document go to this link - https://flutter.dev/docs/deployment/ios
 
 
+### 1.3 Change app icon 
+- Open `pubspec.yml` file 
+- find this line and change the change path to your icon path `image_path: "assets/icons/icon.png"`
+- run this command `flutter pub run flutter_launcher_icons:main`
+
+
 ## 2. Logo
 
 Open lib/utils/config.dart to map your new image Logo or text Logo.
@@ -273,41 +279,14 @@ firebase functions:config:set rzp.key_id=<key_id> rzp.secre=<secret>
 
 ``` firebase deploy --only functions ```
 
-## Role management - firebase functions changes
-open src/index.ts
-```
-// In setRole funtion comment this line and deploy the funtion. 
-// Change the role as admin for yourself and then uncomment this line and deploy the function.
 
-// TODO:(DEVELOPERS) -- Comment the below line to add admin for the first time.
 
-if (!isAdmin) {
-	// Throwing an HttpsError so that the client gets the error details.
-	throw new functions.https.HttpsError(
-		'failed-precondition',
-		'The function must be called ' + 'only by an administrator'
-	)
-}
+## Role management
+- open firebase console
+- go to the firestore 
+- find the user you want to make admin and the change the role to admin
 
-// This is a one time process. When you uncomment that line it ensures that only admin is allowed to change the role.
-	
-```
-
-## Role management - mobile app changes
-open lib/screens/home.dart
-
-```
-bool isAdmin = widget.user.role == 'admin' ? true : false;
-
-// Change the above line as 
-
- bool isAdmin = widget.user.role == 'admin' ? true : true;
- 
- // Change your role as admin and change the above line as 
- 
- bool isAdmin = widget.user.role == 'admin' ? true : false;
- 
-```
+- Note: This is a one time process. Once you are admin, you can change role from app admin panel.
 
 ## Stripe 
 
